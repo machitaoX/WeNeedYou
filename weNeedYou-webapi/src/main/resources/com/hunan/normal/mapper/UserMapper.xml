@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hunan.normal.mapper.UserMapper">
+    <resultMap id="userEntityMap" type="com.hunan.normal.mapper.entity.UserEntity">
+        <id column="id" property="id" javaType="int" jdbcType="INTEGER"></id>
+        <result column="name" property="name" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+        <result column="company" property="company" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+    </resultMap>
+    <select id="queryAll" resultType="com.hunan.normal.mapper.entity.UserEntity">
+        select * from t_user
+    </select>
+    <select id="queryById" parameterType="java.lang.Integer" resultType="com.hunan.normal.mapper.entity.UserEntity"
+            resultMap="userEntityMap">
+        select * from t_user where id = #{id, jdbcType=INTEGER}
+    </select>
+</mapper>

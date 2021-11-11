@@ -1,7 +1,7 @@
 package com.hunan.normal.controller;
 
-import com.hunan.normal.vo.AccountInfo;
-import com.hunan.normal.vo.AccountResp;
+import com.hunan.normal.controller.vo.AccountInfo;
+import com.hunan.normal.controller.vo.AccountResp;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;

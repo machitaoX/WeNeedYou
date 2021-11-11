@@ -1,4 +1,4 @@
-package com.hunan.normal.vo;
+package com.hunan.normal.controller.vo;
 
 import lombok.Data;
 
