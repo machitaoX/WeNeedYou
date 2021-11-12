@@ -1,20 +1,16 @@
-package com.hunan.normal.mapper.entity;
+package com.hunan.normal.controller.vo;
 
 import lombok.Data;
 
 /**
  * @program: WeNeedYou
- * @description: 用户
+ * @description:
  * @author: machitao
- * @create: 2021-11-12 00:58
+ * @create: 2021-11-12 22:34
  **/
 @Data
-public class UserEntity {
-    private int id;
-
+public class AccountRegisterReq {
     private String name;
-
     private String company;
-
     private String password;
 }

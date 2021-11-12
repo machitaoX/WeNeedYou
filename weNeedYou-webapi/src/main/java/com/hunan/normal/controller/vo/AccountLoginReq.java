@@ -4,14 +4,13 @@ import lombok.Data;
 
 /**
  * @program: WeNeedYou
- * @description: 账户信息
+ * @description:
  * @author: machitao
- * @create: 2021-11-09 23:45
+ * @create: 2021-11-12 22:31
  **/
 @Data
-public class AccountInfo {
-
+public class AccountLoginReq {
     private String name;
 
-    private String company;
+    private String password;
 }

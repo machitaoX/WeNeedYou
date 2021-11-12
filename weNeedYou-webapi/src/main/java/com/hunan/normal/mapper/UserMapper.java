@@ -24,4 +24,12 @@ public interface UserMapper {
      * @return
      */
     UserEntity queryById(@Param("id") Integer id);
+
+    /**
+     * 插入数据
+     * @param userEntity
+     * @return
+     */
+    int insert(@Param("userEntity") UserEntity userEntity);
+
 }
